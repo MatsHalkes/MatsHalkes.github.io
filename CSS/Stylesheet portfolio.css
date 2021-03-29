@@ -7,11 +7,7 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #286efa;
-  color: #eee;
-  font-family: "Quicksand", sans-serif;
-}
+
 
 #toggle {
   position: fixed;

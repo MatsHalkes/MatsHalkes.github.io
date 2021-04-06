@@ -120,6 +120,7 @@ h1 {
   z-index: -2;
   background-image: url(../Images/background.jpg);
   background-size: cover;
+  opacity: 50%;
 }
 
 

@@ -100,6 +100,7 @@ h1 {
   transform: translate(-50%, -50%);
   width: 80%;
   text-align: center;
+
 }
 
 .welcome{
@@ -117,7 +118,7 @@ h1 {
   top: -10%;
   left: 0;
   z-index: -2;
-  background-image: url(../Images/Bilde1.png);
+  background-image: url(../Images/background.jpg);
   background-size: cover;
 }
 

@@ -107,12 +107,14 @@ h2 {
   position: absolute;
   font-size: medium;
   text-align: center;
+  top: 55%;
 }
 
 h3 {
   position: absolute;
   font-size: medium;
   text-align: center;
+  top: 60%;
 }
 
 .welcome{

@@ -13,7 +13,7 @@
   left: 0;
   top: -9px;
 }
-#toggle span:after{
+#toggle span:after {
   top: 9px;
 }
 #toggle span {
@@ -54,15 +54,16 @@
   width: 200px;
   padding: 10px;
   margin: auto;
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans",
+    "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
   text-align: center;
   border-radius: 4px;
   background: white;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
   /* just for this demo */
   opacity: 0;
   visibility: hidden;
-  transition: opacity .4s;
+  transition: opacity 0.4s;
 }
 #menu:after {
   position: absolute;
@@ -74,7 +75,9 @@
   border-right: 15px solid transparent;
   border-bottom: 20px solid white;
 }
-ul, li, li a {
+ul,
+li,
+li a {
   list-style: none;
   display: block;
   margin: 0;
@@ -84,18 +87,27 @@ li a {
   padding: 5px;
   color: #888;
   text-decoration: none;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 li a:hover,
 li a:focus {
-  background: #1ABC9C;
+  background: #1abc9c;
   color: #fff;
 }
 
-
 /* demo styles */
-body { margin-top: 3em; background: #eee; color: #555; font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif; }
-p, p a { font-size: 12px;text-align: center; color: #888; }
+body {
+  margin-top: 3em;
+  background: #eee;
+  color: #555;
+  font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+p,
+p a {
+  font-size: 12px;
+  text-align: center;
+  color: #888;
+}
 
 h1 {
   position: absolute;

@@ -1,97 +1,101 @@
-@import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 18px;
-}
-
-body {
-  font-family: "Cutive Mono", serif;
-  font-size: 1.2em;
-  line-height: 1.6;
-  background: rgb(255, 255, 255);
-  overflow-x: hidden;
-}
-
-label .menu {
-  position: absolute;
-  right: -100px;
-  top: -100px;
-  z-index: 100;
-  width: 200px;
-  height: 200px;
-  background: #FFF;
-  border-radius: 50% 50% 50% 50%;
-  transition: 0.5s ease-in-out;
-  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
-  cursor: pointer;
-}
-label .hamburger {
-  position: absolute;
-  top: 135px;
-  left: 50px;
-  width: 30px;
-  height: 2px;
-  background: #000;
+/* Important styles */
+#toggle {
   display: block;
-  transform-origin: center;
-  transition: 0.5s ease-in-out;
+  width: 28px;
+  height: 30px;
+  margin: 30px auto 10px;
 }
-label .hamburger:after, label .hamburger:before {
-  transition: 0.5s ease-in-out;
+
+#toggle span:after,
+#toggle span:before {
   content: "";
   position: absolute;
+  left: 0;
+  top: -9px;
+}
+#toggle span:after{
+  top: 9px;
+}
+#toggle span {
+  position: relative;
   display: block;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
   width: 100%;
-  height: 100%;
-  background: #000;
+  height: 5px;
+  background-color: #888;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
 }
-label .hamburger:before {
-  top: -10px;
+
+/* on activation */
+#toggle.on span {
+  background-color: transparent;
 }
-label .hamburger:after {
-  bottom: -10px;
+#toggle.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
 }
-label input {
-  display: none;
+#toggle.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
 }
-label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-  border-radius: 0;
-}
-label input:checked + .menu .hamburger {
-  transform: rotate(45deg);
-}
-label input:checked + .menu .hamburger:after {
-  transform: rotate(90deg);
-  bottom: 0;
-}
-label input:checked + .menu .hamburger:before {
-  transform: rotate(90deg);
-  top: 0;
-}
-label input:checked + .menu + ul {
+#toggle.on + #menu {
   opacity: 1;
+  visibility: visible;
 }
-label ul {
-  z-index: 200;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+/* menu appearance*/
+#menu {
+  position: relative;
+  color: #999;
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  text-align: center;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  /* just for this demo */
   opacity: 0;
-  transition: 0.25s 0s ease-in-out;
+  visibility: hidden;
+  transition: opacity .4s;
 }
-label a {
-  margin-bottom: 1em;
+#menu:after {
+  position: absolute;
+  top: -15px;
+  left: 95px;
+  content: "";
   display: block;
-  color: #000;
-  text-decoration: none;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
 }
+ul, li, li a {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+li a {
+  padding: 5px;
+  color: #888;
+  text-decoration: none;
+  transition: all .2s;
+}
+li a:hover,
+li a:focus {
+  background: #1ABC9C;
+  color: #fff;
+}
+
+
+/* demo styles */
+body { margin-top: 3em; background: #eee; color: #555; font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif; }
+p, p a { font-size: 12px;text-align: center; color: #888; }
 
 h1 {
   position: absolute;

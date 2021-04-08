@@ -103,14 +103,14 @@ h1 {
 
 }
 
-h2 {
+.about {
   position: absolute;
   font-size: medium;
   text-align: center;
   top: 55%;
 }
 
-h3 {
+.about2 {
   position: absolute;
   font-size: medium;
   text-align: center;

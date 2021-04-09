@@ -88,6 +88,7 @@ nav a:hover:before {
 }
 
 h1 {
+  font-family: "Raleway", sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -95,6 +96,14 @@ h1 {
   width: 80%;
   text-align: center;
 
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  top: 50%;
 }
 
 .about {
@@ -154,13 +163,6 @@ h1 {
 }
 
 /* Defines apperance of h2 */
-h2 {
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  font-size: large;
-  font-weight: 700;
-  top: 50%;
-}
 
 /* Adds a gery background color to the top navigation */
 

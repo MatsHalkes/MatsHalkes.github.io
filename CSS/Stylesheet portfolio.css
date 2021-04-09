@@ -32,7 +32,7 @@ nav a {
   letter-spacing: 1px;
   position: relative;
   display: inline-block;
-  top: 100px;
+  top: 50px;
 }
 nav a:before {
   content: "";

@@ -17,7 +17,7 @@
 }
 nav {
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 50px;
   text-align: center;
 }

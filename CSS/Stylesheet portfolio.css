@@ -187,6 +187,7 @@ h2 {
 footer {
   display: block;
   text-align: center;
+  font-family: "Oswald";
 }
 
 @media only screen and (max-width: 600px) {

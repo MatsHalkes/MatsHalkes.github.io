@@ -200,8 +200,18 @@ h1 {
   text-align: center;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+
+#content-wrap {
+  padding-bottom: 2.5rem;    
+}
+
 footer {
-  display: block;
+  
   text-align: center;
   font-family: "Oswald";
 }

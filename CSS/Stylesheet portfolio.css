@@ -201,16 +201,9 @@ h1 {
 }
 
 footer {
-  position: sticky;
-  margin-top: 2%;
-  height: 50;
-  width: 100%;
+  display: block;
   text-align: center;
-  font-size: 0.8em;
-  bottom: 0;
   font-family: "Oswald";
- 
-  
 }
 
 @media only screen and (max-width: 600px) {

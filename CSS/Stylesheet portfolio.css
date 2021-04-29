@@ -201,7 +201,7 @@ h1 {
 }
 
 footer {
-  position: fixed;
+  position: sticky;
   margin-top: 2%;
   height: 50;
   width: 100%;

@@ -201,8 +201,13 @@ h1 {
 }
 
 footer {
-  display: block;
+  position: fixed;
+  margin-top: 2%;
+  height: 50;
+  width: 100%;
   text-align: center;
+  font-size: 0.8em;
+  bottom: 0;
   font-family: "Oswald";
 }
 

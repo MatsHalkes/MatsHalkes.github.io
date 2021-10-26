@@ -1,8 +1,12 @@
-var sum = 0;
+var tall1 = Number(prompt("Skriv inn et tall:"));
+var tall2 = Number(prompt("Skriv inn et tall til:"));
 
-while (sum < 100) {
-  var tall = Number(prompt("Skriv et tall:"));
-  sum += tall;
+if (tall1>= tall2) {
+    console.log(tall1);
 }
-
-console.log(sum);
+else if (tall2 >= tall1){
+    console.log(tall2);
+}
+else if (tall1 == tall2) {
+    console.log("Tallene er like");
+}

@@ -1,5 +1,5 @@
-var gratis = 0<=3;
-var barn = 4<=15;
+var gratis = 0;
+var barn = 4;
 var honør = 67;
 
 var alder = Number(prompt("Hvor gammel er du?"));
@@ -13,6 +13,6 @@ else if (alder >= barn && alder <=15){
 else if (alder >= honør) {
     console.log("Du får 50% rabatt siden du er honør");
 }
-else if (alder >= 15 && alder <= honør) {
+else if (alder >= 16 && alder <= honør) {
   console.log("Du får ikke noe rabatt");
 }
